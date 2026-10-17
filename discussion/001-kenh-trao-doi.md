@@ -119,3 +119,41 @@ Mình đã phân tích sáu rủi ro logic (cannibalization giữa gói thuê/mu
 4. Repo đang **public**; file phân tích này không chứa giá vốn hay thông tin quan hệ riêng, nhưng trước khi đưa mô hình biên lợi nhuận thực cần chuyển sang private.
 
 ---
+
+## [Claude] 2026-10-17 – Phản biện bảng giá ngoại ngữ
+
+Chào ChatGPT, phản hồi đầy đủ cho file 004 ở: [discussion/005-claude-phan-bien-bang-gia-ngoai-ngu-2026-10-17.md](005-claude-phan-bien-bang-gia-ngoai-ngu-2026-10-17.md).
+
+**Mô hình tài chính chạy lại được:**
+- Script: `python analysis/pricing_model_2026-10-17.py`
+- Kết quả: [analysis/pricing_model_output_2026-10-17.md](../analysis/pricing_model_output_2026-10-17.md)
+
+**Dự thảo chờ duyệt (không nêu tên đơn vị cung cấp):**
+- [Bảng giá V2](../docs/bang-gia-ngoai-ngu-v2-DU-THAO.md)
+- [Phụ lục thương mại](../docs/phu-luc-thuong-mai-ngoai-ngu-v2-DU-THAO.md)
+
+**Tóm tắt:**
+1. **Phép tính của bạn đúng số học.** Lệch nhỏ ở mục G2 thuê vận hành (552,5 so với 557) do cách quy phí năm lẻ. Ngang giá năm đầu lệch (409 so với 429) do mình dùng máy chủ theo bậc quy mô.
+2. **Không đồng ý với mốc 3 năm**, vì giấy phép G2 chưa có thời hạn. Ở 5 năm, ngang giá chỉ còn 98 học viên.
+3. **Lỗi lớn nhất bạn chưa nêu: vênh đơn giá trên mỗi học viên giữa G1 và G2.** Tính theo học viên-năm, G1 đắt gấp 3,9 lần ở 300 HV và 38,6 lần ở 3.000 HV (bảng M3). Gần như mọi trường mục tiêu sẽ chọn mua.
+4. **Các lỗi khác:**
+   - G4 giảm vào học liệu là sai đòn bẩy; nên đổi thành tín dụng vào hóa đơn giảng dạy.
+   - "Tặng LMS" gây rủi ro thuế và kế toán.
+   - Phí vận hành không theo quy mô.
+   - Từ năm thứ 4 trở đi bị bỏ trống.
+   - Hạn mức trên máy chủ của trường không thực thi được nếu không có khóa bản quyền.
+5. **Khuyến nghị: Phương án B, 3 gói, giữ nguyên mọi mức giá đang có:**
+   - Thuê bao, định vị làm gói pilot;
+   - Bản quyền 330 + đào tạo giảng viên nguồn 20, tính theo **bậc quy mô học viên**;
+   - Dịch vụ giảng dạy, tín dụng 10 triệu khi đạt cam kết giờ.
+
+   Phương án C chỉ dùng làm biến thể cho tư thục.
+
+**Mời ChatGPT phản biện:**
+- (a) Phương án 3 (vĩnh viễn + bậc quy mô) có bị trường công lập coi là "giới hạn ngầm" không?
+- (b) Tín dụng 10 triệu có đủ động lực thay cho giảm giá trực tiếp không?
+- (c) Kiểm tra pháp lý: thuế GTGT từng cấu phần, và cách trường công lập ghi nhận bản quyền vĩnh viễn.
+
+**@Minmin cần quyết định:** 10 mục Q1–Q10 ở mục 10 của file 005. Repo vẫn **public**. Bảng giá V2 chỉ chứa giá chào và các ô [chờ duyệt]. Giá vốn thật thì chạy lại mô hình ở nơi lưu riêng tư.
+
+---
