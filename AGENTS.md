@@ -6,19 +6,21 @@ Repo này là nơi nhiều trợ lý AI và Minmin cùng làm một dự án. M�
 
 1. [`docs/BRIEF.md`](docs/BRIEF.md): toàn bộ bối cảnh, quyết định, khung chấm điểm, kết quả, việc còn lại.
 2. [`data/schools_scored.csv`](data/schools_scored.csv): dữ liệu hiện tại. Cột `can_cu_cham` giải thích từng điểm.
-3. Issue #1 (kênh trao đổi) và các Issue việc đang mở.
+3. [`discussion/001-kenh-trao-doi.md`](discussion/001-kenh-trao-doi.md) (kênh trao đổi) và [`TASKS.md`](TASKS.md) (danh sách việc).
 
 ## 2. Nói chuyện ở đâu, như thế nào
 
-- **Kênh chung: Issue #1 "Kênh trao đổi".** Dùng cho câu hỏi, phản biện, đề xuất đổi hướng, báo cáo tiến độ.
-- **Mỗi việc cụ thể có một Issue riêng.** Thảo luận chi tiết của việc nào để trong Issue đó.
-- Mỗi bình luận **mở đầu bằng chữ ký** để biết ai nói:
-  - `**[ChatGPT]** 2026-10-18` …
-  - `**[Claude]** 2026-10-18` …
-  - `**[Minmin]** 2026-10-18` …
-- Nếu ChatGPT không tự đăng được lên GitHub: ChatGPT soạn bình luận theo đúng định dạng trên, Minmin dán vào Issue.
-- Khi nhận một việc: bình luận "Nhận việc" trong Issue đó. Khi xong: tóm tắt kết quả + link commit/PR, rồi đề nghị Minmin đóng Issue.
-- **Câu hỏi cần Minmin trả lời**: ghi rõ `@GodOfIT cần quyết định:` ở đầu dòng, kèm các phương án và khuyến nghị.
+Quyền GitHub hiện có không mở được Issue, nên **trao đổi bằng file trong repo**. Mỗi lần ghi là một commit, lịch sử nằm trong git.
+
+- **Kênh chung:** [`discussion/001-kenh-trao-doi.md`](discussion/001-kenh-trao-doi.md). Dùng cho câu hỏi, phản biện, đề xuất đổi hướng, báo cáo tiến độ.
+  - **Ghi nối tiếp xuống cuối file**, không sửa/xóa bình luận của người khác.
+  - Mỗi bình luận mở đầu bằng tiêu đề: `## [ChatGPT] 2026-10-18 – chủ đề`, `## [Claude] …`, `## [Minmin] …`
+  - Chủ đề lớn, dài thì mở file mới: `discussion/002-<chu-de>.md`, rồi ghi link vào kênh chung.
+- **Việc cụ thể:** [`TASKS.md`](TASKS.md). Nhận việc bằng cách đổi trạng thái thành `ĐANG LÀM (tên, ngày)`. Tiến độ ghi ngay dưới mục của việc đó.
+- **Cần Minmin quyết định:** ghi `**@Minmin cần quyết định:**` kèm các phương án và khuyến nghị.
+- **Commit message** bắt đầu bằng tên: `[ChatGPT] Xác minh 5 trường Đợt 1`, `[Claude] …`, `[Minmin] …`
+- **Nếu ChatGPT không tự commit được:** ChatGPT soạn nội dung (bình luận hoặc file sửa) theo đúng định dạng, Minmin dán vào GitHub (sửa file trên web → Commit). Claude cũng có thể áp vào khi được nhờ.
+- Nếu sau này bật được Issues, có thể chuyển sang Issues; giữ file này làm lưu trữ.
 
 ## 3. Nguyên tắc nội dung
 
@@ -40,7 +42,7 @@ Repo này là nơi nhiều trợ lý AI và Minmin cùng làm một dự án. M�
 3. Chạy `python scripts/export_csv.py` (và `python scripts/build.py` nếu cần Excel).
 4. Mở Pull Request. Mô tả PR liệt kê từng thay đổi theo mẫu ở cách 2.
 
-**Cách 2 – không chạy được code:** bình luận trong Issue liên quan một bảng theo mẫu:
+**Cách 2 – không chạy được code:** ghi vào mục của việc trong `TASKS.md` (hoặc kênh trao đổi) một bảng theo mẫu:
 
 | Trường | Tiêu chí / trường dữ liệu | Cũ | Mới | Lý do | Nguồn (URL, ngày truy cập) |
 |---|---|---|---|---|---|
@@ -51,5 +53,5 @@ Claude hoặc Minmin sẽ áp vào code.
 ## 5. Không được làm
 
 - Không sửa tay `data/schools_scored.csv` mà không cập nhật `scripts/data.py`, vì lần chạy script sau sẽ ghi đè.
-- Không đổi công thức tổng điểm, ngưỡng đợt hay trọng số mà chưa nêu ở Issue #1 và chưa được Minmin đồng ý.
+- Không đổi công thức tổng điểm, ngưỡng đợt hay trọng số mà chưa nêu ở kênh trao đổi và chưa được Minmin đồng ý.
 - Không xóa dòng dữ liệu. Trường không còn phù hợp thì đánh dấu ở cột ghi chú/độ tin cậy.

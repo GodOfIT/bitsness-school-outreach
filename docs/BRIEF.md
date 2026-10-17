@@ -4,7 +4,7 @@
 >
 > - Người soạn: Claude (Anthropic), theo yêu cầu của Minmin
 > - Ngày lập: 17/10/2026 (giờ Hà Nội)
-> - Quy ước trao đổi: xem [`AGENTS.md`](../AGENTS.md). Kênh thảo luận chính là **Issue #1**.
+> - Quy ước trao đổi: xem [`AGENTS.md`](../AGENTS.md). Kênh thảo luận chính là [`discussion/001-kenh-trao-doi.md`](../discussion/001-kenh-trao-doi.md). Danh sách việc ở [`TASKS.md`](../TASKS.md).
 
 ---
 
@@ -16,7 +16,7 @@
 - **Đã có:** Khung chấm 11 tiêu chí (tổng trọng số 100), dữ liệu chấm sơ bộ cho **97 cơ sở**, phân thành 4 đợt, kế hoạch tiếp cận theo thời gian, kịch bản theo 7 phân khúc, bộ câu hỏi khảo sát, pipeline theo dõi. Tất cả nằm trong file Excel và các CSV trong repo này.
 - **Kết quả hiện tại:** Đợt 1 = 16 trường, Đợt 2 = 36, Đợt 3 = 41, Đợt 4 (ngoài HN) = 4.
 - **Hạn chế lớn nhất:** Điểm còn **sơ bộ**. Dữ liệu LMS và khoảng cách trong file gốc của người dùng chưa được xác minh. Điểm của 30 trường đại học là ước lượng. Tiêu chí quan hệ (C8) đang mặc định = 1 cho tất cả.
-- **Việc tiếp theo quan trọng nhất:** (1) Minmin điền C8. (2) Xác minh 16 trường Đợt 1. (3) Chuẩn bị bộ chào hàng và demo. Danh sách việc đầy đủ ở mục 12 và trong các Issue.
+- **Việc tiếp theo quan trọng nhất:** (1) Minmin điền C8. (2) Xác minh 16 trường Đợt 1. (3) Chuẩn bị bộ chào hàng và demo. Danh sách việc đầy đủ ở mục 12 và trong `TASKS.md`.
 
 ---
 
@@ -267,7 +267,7 @@ Pipeline gồm 8 giai đoạn: 1. Chưa liên hệ → 2. Đã liên hệ → 3.
 
 ## 12. Việc tiếp theo (backlog)
 
-Mỗi việc có một Issue riêng trên GitHub.
+Chi tiết và tiến độ từng việc ở [`TASKS.md`](../TASKS.md) (mã T1–T8 tương ứng A–H dưới đây).
 
 | # | Việc | Ai làm | Ưu tiên |
 |---|---|---|---|
@@ -287,6 +287,8 @@ Mỗi việc có một Issue riêng trên GitHub.
 ```
 README.md                    # tổng quan + link nhanh
 AGENTS.md                    # quy ước làm việc cho AI và người
+TASKS.md                     # danh sách việc T1–T8 + tiến độ
+discussion/001-kenh-trao-doi.md  # kênh trao đổi Minmin ↔ ChatGPT ↔ Claude
 docs/BRIEF.md                # tài liệu này
 data/original_flat.txt       # trích xuất thô từ file docx gốc (52 trường)
 data/original_colleges_list.csv
@@ -311,4 +313,4 @@ File Excel có 7 sheet: Đọc trước, Kế hoạch, Trọng số, Chấm đi�
 - Trường bổ sung (ĐH, TC, TT): sửa hàm `additions()`.
 - Trọng số: sửa `CRIT`.
 
-Sau khi sửa, chạy lại 2 script. Nếu không chạy được code, ghi đề xuất thay đổi vào Issue theo mẫu trong `AGENTS.md`.
+Sau khi sửa, chạy lại 2 script. Nếu không chạy được code, ghi đề xuất thay đổi vào `TASKS.md` hoặc kênh trao đổi theo mẫu trong `AGENTS.md`.

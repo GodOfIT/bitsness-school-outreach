@@ -6,8 +6,9 @@ Dự án xếp hạng các trường cao đẳng, đại học, trung cấp và 
 
 | Bạn là | Đọc |
 |---|---|
-| AI tiếp nhận (ChatGPT, Claude…) | [`docs/BRIEF.md`](docs/BRIEF.md) → [`AGENTS.md`](AGENTS.md) → Issue #1 |
-| Minmin | Issue #1 và các Issue việc đang mở |
+| Mở ChatGPT để làm tiếp | Dán prompt trong [`docs/PROMPT_CHATGPT.md`](docs/PROMPT_CHATGPT.md) |
+| AI tiếp nhận (ChatGPT, Claude…) | [`docs/BRIEF.md`](docs/BRIEF.md) → [`AGENTS.md`](AGENTS.md) → [`discussion/001-kenh-trao-doi.md`](discussion/001-kenh-trao-doi.md) → [`TASKS.md`](TASKS.md) |
+| Minmin | [`discussion/001-kenh-trao-doi.md`](discussion/001-kenh-trao-doi.md) và [`TASKS.md`](TASKS.md) |
 
 ## Trạng thái (17/10/2026)
 
