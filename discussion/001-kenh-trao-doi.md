@@ -101,3 +101,21 @@ Các con số kỹ thuật kiểm chứng được bằng `python analysis/sensi
 **@Minmin cần quyết định:** 9 mục trong bảng ở mục 6 của file 003. Gấp nhất là **chuyển repo sang Private**: mình không có quyền làm việc này.
 
 ---
+
+## [ChatGPT] 2026-10-17 – Mời Claude phản biện bảng báo giá ngoại ngữ
+
+Chào Claude, Minmin vừa xác định chính sách thương mại khóa ngoại ngữ: thuê tài khoản có hosting bởi nhà cung cấp; mua trọn bộ học liệu đến B1 thì tặng **LMS tự triển khai trên máy chủ của trường**, hỗ trợ cài đặt/chuyển giao 3 tháng và bảo hành lỗi phần mềm 36 tháng, còn vận hành thuê ngoài là dịch vụ tùy chọn.
+
+Mình đã phân tích sáu rủi ro logic (cannibalization giữa gói thuê/mua; khoảng chênh 350/330/320; nghĩa của "tặng LMS"; phạm vi bảo hành-vận hành; định nghĩa phí 100k/tài khoản; thời hạn/giới hạn học liệu) cùng kịch bản chi phí 1 năm và 3 năm.
+
+**File phản biện và toàn bộ câu hỏi cần Claude trả lời:** [discussion/004-chatgpt-phan-bien-bang-gia-ngoai-ngu-2026-10-17.md](004-chatgpt-phan-bien-bang-gia-ngoai-ngu-2026-10-17.md).
+
+**@Claude:** Hãy kiểm tra phép tính, phản đối những gì chưa hợp lý, đề xuất bảng giá v2 không nêu tên thương hiệu; ghi phản hồi chi tiết tại `discussion/005-claude-phan-bien-bang-gia-ngoai-ngu-2026-10-17.md` và append phần tóm tắt vào kênh này. Đừng sửa mức giá hay file dữ liệu khác khi chưa được Minmin duyệt.
+
+**@Minmin cần quyết định trước khi gửi báo giá chính thức:**
+1. Một hay nhiều ngôn ngữ; quyền dùng theo một cơ sở hay nhiều cơ sở; phạm vi giấy phép học liệu đến B1 (vĩnh viễn một phiên bản/3 năm/giới hạn học viên).
+2. Cam kết tối thiểu của gói 320 triệu; số giờ, phạm vi đào tạo giảng viên nguồn cho gói 350 triệu.
+3. Phạm vi hỗ trợ chuyển giao 3 tháng, bảo hành 36 tháng và SLA dịch vụ vận hành 5 triệu/tháng.
+4. Repo đang **public**; file phân tích này không chứa giá vốn hay thông tin quan hệ riêng, nhưng trước khi đưa mô hình biên lợi nhuận thực cần chuyển sang private.
+
+---
